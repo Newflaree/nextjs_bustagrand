@@ -1,8 +1,13 @@
+// Layouts
+import { MainLayout } from '@/components/layouts';
 
 export default function Home() {
   return (
-    <>
-      <h1>Home</h1>
-    </>
+    <MainLayout
+      pageTitle='Inicio'
+      pageDesc='Página de inicio'
+    >
+      <h1>Inicio</h1>
+    </MainLayout>
   )
 }
