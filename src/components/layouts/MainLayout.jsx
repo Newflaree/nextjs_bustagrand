@@ -1,4 +1,13 @@
-import Head from "next/head";
+// Next.js
+import Head from 'next/head';
+// Components
+import {
+  Footer,
+  NavBar,
+  SideMenu,
+  WsppBtn
+} from '../ui';
+
 
 export const MainLayout = ({ pageTitle = '', pageDesc = '', children }) => {
   return (
@@ -9,13 +18,13 @@ export const MainLayout = ({ pageTitle = '', pageDesc = '', children }) => {
         <meta name='description' content={ pageDesc } />
       </Head>
 
-      {/*WsppBtn.jsx*/} 
+      <WsppBtn />
 
       <nav>
-        {/*NavBar.jsx*/} 
+        <NavBar />
       </nav>
 
-      {/*SideMenu.jsx*/} 
+      <SideMenu />
 
       <main
         style={{
@@ -28,7 +37,7 @@ export const MainLayout = ({ pageTitle = '', pageDesc = '', children }) => {
         { children }
       </main>
 
-      {/*Footer.jsx*/} 
+      <Footer />
     </>
   );
 }
