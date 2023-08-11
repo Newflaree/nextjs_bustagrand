@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <MainLayout
       pageTitle='Inicio'
-      pageDesc='Página de inicio'
+      pageDesc='Estructuras metalicas y maderas'
     >
       <h1>Inicio</h1>
     </MainLayout>

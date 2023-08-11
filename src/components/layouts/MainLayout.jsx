@@ -9,7 +9,7 @@ export const MainLayout = ({ pageTitle = '', pageDesc = '', children }) => {
     <>
       <Head>
         <title>Bustagrand | { pageTitle }</title>
-        <link rel='icon' href={ process.env.NEXT_PUBLIC_LOGO || '/logo.jpg' } />
+        <link rel='icon' href={ process.env.NEXT_PUBLIC_LOGO || '' } />
         <meta name='description' content={ pageDesc } />
       </Head>
 

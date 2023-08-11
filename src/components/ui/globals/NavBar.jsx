@@ -35,21 +35,83 @@ export const NavBar = () => {
             color='black'
           >
             <Image 
-              src={ '/logo.jpg' }
-              alt='logo'
+              src={ process.env.NEXT_PUBLIC_LOGO || '' }
+              alt='aljflafdkj'
               width={ 40 }
               height={ 40 }
             />
             <Typography ml={ 1 }>Bustagrand</Typography>
           </Link>
         </NextLink>
+
+        <Box flex={ 1 } />
+
+        <Box
+          sx={{
+            display: {
+              xs: 'none',
+              sm: 'block'
+            }
+          }}
+        >
+          <NextLink
+            href='/'
+            passHref
+            legacyBehavior
+          >
+            <Link>
+              <Button color='info'>
+                Quienes Somos
+              </Button>
+            </Link>
+          </NextLink>
+          <NextLink
+            href='/'
+            passHref
+            legacyBehavior
+          >
+            <Link>
+              <Button color='info'>
+                Servicios
+              </Button>
+            </Link>
+          </NextLink>
+          <NextLink
+            href='/'
+            passHref
+            legacyBehavior
+          >
+            <Link>
+              <Button color='info'>
+                Cotiza acá
+              </Button>
+            </Link>
+          </NextLink>
+          <NextLink
+            href='/'
+            passHref
+            legacyBehavior
+          >
+            <Link>
+              <Button color='info'>
+                Galería
+              </Button>
+            </Link>
+          </NextLink>
+        </Box>
+
+        <Button
+          onClick={ toggleSideMenu }
+          sx={{
+            display: {
+              xs: 'flex',
+              sm: 'none'
+            }
+          }}
+        >
+          <MenuIcon />
+        </Button>
       </Toolbar>
-
-      <Box flex={ 1 } />
-
-      <Box>
-
-      </Box>
     </AppBar>
   );
 }
