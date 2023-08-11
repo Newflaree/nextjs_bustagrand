@@ -1,12 +1,7 @@
 // Next.js
 import Head from 'next/head';
+import {Footer, NavBar, SideMenu, WsppBtn} from '../ui';
 // Components
-import {
-  Footer,
-  NavBar,
-  SideMenu,
-  WsppBtn
-} from '../ui';
 
 
 export const MainLayout = ({ pageTitle = '', pageDesc = '', children }) => {
@@ -14,7 +9,7 @@ export const MainLayout = ({ pageTitle = '', pageDesc = '', children }) => {
     <>
       <Head>
         <title>Bustagrand | { pageTitle }</title>
-        <link rel='icon' href={ process.env.NEXT_PUBLIC_LOGO } />
+        <link rel='icon' href={ process.env.NEXT_PUBLIC_LOGO || '/logo.jpg' } />
         <meta name='description' content={ pageDesc } />
       </Head>
 

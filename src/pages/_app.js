@@ -3,12 +3,15 @@ import { CssBaseline, ThemeProvider } from '@mui/material';
 import { lightTheme } from '@/themes';
 // Styles
 import '@/styles/globals.css';
+import {UIProvider} from '@/context';
 
 export default function App({ Component, pageProps }) {
   return (
-    <ThemeProvider theme={ lightTheme }>
-      <CssBaseline />
-      <Component {...pageProps} />
-    </ThemeProvider>
+    <UIProvider>
+      <ThemeProvider theme={ lightTheme }>
+        <CssBaseline />
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </UIProvider>
   )
 }
