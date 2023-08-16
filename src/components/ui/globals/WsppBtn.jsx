@@ -9,7 +9,7 @@ export const WSPPBtn = () => {
   return (
     <IconButton>
       <NextLink 
-        href={ process.env.NEXT_PUBLIC_PHONE || '' }
+        href={ 'https://wa.me/+56946477646' }
         passHref 
         legacyBehavior
       >

@@ -35,7 +35,7 @@ export const NavBar = () => {
             color='black'
           >
             <Image 
-              src={ process.env.NEXT_PUBLIC_LOGO || '' }
+              src='https://res.cloudinary.com/newflare/image/upload/v1691769690/bustagrand/logo_g875py.png'
               alt='aljflafdkj'
               width={ 40 }
               height={ 40 }
