@@ -1,6 +1,6 @@
 // Next.js
 import Head from 'next/head';
-import {Footer, NavBar, SideMenu, WsppBtn} from '../ui';
+import {Footer, NavBar, SideMenu, WSPPBtn } from '../ui';
 // Components
 
 
@@ -13,7 +13,7 @@ export const MainLayout = ({ pageTitle = '', pageDesc = '', children }) => {
         <meta name='description' content={ pageDesc } />
       </Head>
 
-      <WsppBtn />
+      <WSPPBtn />
 
       <nav>
         <NavBar />
