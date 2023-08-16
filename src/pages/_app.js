@@ -1,9 +1,11 @@
+// Material UI
 import { CssBaseline, ThemeProvider } from '@mui/material';
 // Themes
 import { lightTheme } from '@/themes';
 // Styles
 import '@/styles/globals.css';
-import {UIProvider} from '@/context';
+// Context
+import { UIProvider } from '@/context';
 
 export default function App({ Component, pageProps }) {
   return (
