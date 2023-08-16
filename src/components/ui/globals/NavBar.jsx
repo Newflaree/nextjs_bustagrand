@@ -83,7 +83,7 @@ export const NavBar = () => {
           >
             <Link>
               <Button color='info'>
-                Cotiza acá
+                Galería
               </Button>
             </Link>
           </NextLink>
@@ -94,7 +94,7 @@ export const NavBar = () => {
           >
             <Link>
               <Button color='info'>
-                Galería
+                Cotiza acá
               </Button>
             </Link>
           </NextLink>

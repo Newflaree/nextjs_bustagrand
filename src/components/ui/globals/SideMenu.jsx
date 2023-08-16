@@ -5,10 +5,11 @@ import {
   Box,
   Drawer,
   List,
-  ListItem
+  ListItem,
 } from '@mui/material';
 // Context
 import { UIContext } from '@/context';
+
 
 export const SideMenu = () => {
   const { toggleSideMenu, isMenuOpen } = useContext( UIContext )
@@ -18,22 +19,25 @@ export const SideMenu = () => {
       open={ isMenuOpen }
       onClose={ toggleSideMenu }
       anchor='right'
-      sx={{ backdropFilter: 'blur(4px)', transition: 'all 0.5s ease-out' }}
+      sx={{
+        backdropFilter: 'blur(4px)',
+        transition: 'all 0.5s ease-out'
+      }}
     >
       <Box sx={{ width: 250, paddingTop: 5 }}>
         <List>
           {/*TODO: Crear NextLinks*/}
-          <ListItem className='text-end'>
+          <ListItem>
             Quienes Somos
           </ListItem>
-          <ListItem className='text-end'>
+          <ListItem>
             Services
           </ListItem>
-          <ListItem className='text-end'>
-            Cotiza Acá
-          </ListItem>
-          <ListItem className='text-end'>
+          <ListItem>
             Galería
+          </ListItem>
+          <ListItem>
+            Cotiza Acá
           </ListItem>
         </List>
       </Box>

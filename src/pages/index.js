@@ -7,7 +7,8 @@ export default function Home() {
       pageTitle='Inicio'
       pageDesc='Estructuras metalicas y maderas'
     >
-      <h1>Inicio</h1>
+      { /*SlideShow*/ }
+      { /*Algunos servicios*/ }
     </MainLayout>
   )
 }
